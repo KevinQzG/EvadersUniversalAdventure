@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/newscene.unity
     guid: fe1468d644b6c4c6f842e62c8bfc32c6
+  - enabled: 1
+    path: Assets/Crowd Runner/Scenes/FirstLevel.unity
+    guid: 6d2cc78975a38474abb29c3ecc342ff6
   m_configObjects: {}
