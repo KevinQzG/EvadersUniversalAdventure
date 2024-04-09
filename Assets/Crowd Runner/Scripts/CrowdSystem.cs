@@ -7,6 +7,7 @@ public class CrowdSystem : MonoBehaviour
 {
 
     [Header("Elements")]
+    [SerializeField] private PlayerAnimator playerAnimator;
     [SerializeField] private Transform runnersParent;
     [SerializeField] private GameObject runnerPrefab;
 
@@ -42,14 +43,14 @@ public class CrowdSystem : MonoBehaviour
         return new Vector3(x, 0, z);
     }
 
-public float GetCrowdRadius()
-{
-    return radius * Mathf.Sqrt(runnersParent.childCount);
-}
-
- public void ApplyBonus(BonusType bonusType, int bonusAmount)
+    public float GetCrowdRadius()
     {
-        switch(bonusType)
+        return radius * Mathf.Sqrt(runnersParent.childCount);
+    }
+
+    public void ApplyBonus(BonusType bonusType, int bonusAmount)
+    {
+        switch (bonusType)
         {
             case BonusType.Addition:
                 AddRunners(bonusAmount);
@@ -75,6 +76,9 @@ public float GetCrowdRadius()
     {
         for (int i = 0; i < amount; i++)
             Instantiate(runnerPrefab, runnersParent);
+        playerAnimator.Run();
+
+
     }
 
     private void RemoveRunners(int amount)
