@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
         GameManager.onGameStateChanged += GameStateChangedCallback;
     }
 
+    private void OnDestroy()
+    {
+        GameManager.onGameStateChanged -= GameStateChangedCallback;
+    }
+
     // Update is called once per frame
     void Update()
     {
