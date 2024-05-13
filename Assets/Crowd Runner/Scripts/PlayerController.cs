@@ -54,6 +54,8 @@ public class PlayerController : MonoBehaviour
         if (gameState == GameManager.GameState.Game)
             StartMoving();
             else if (gameState == GameManager.GameState.Gameover)
+            StopMoving();   
+            else if (gameState == GameManager.GameState.LevelComplete)
             StopMoving();
     }
 
