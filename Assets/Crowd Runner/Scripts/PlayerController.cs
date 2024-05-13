@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
 
     [Header(" Elements ")]
     [SerializeField] private CrowdSystem crowdSystem;
@@ -18,6 +19,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float slideSpeed;
     private Vector3 clickedScreenPosition;
     private Vector3 clickedPlayerPosition;
+
+    private void Awake()
+    {
+        if (instance != null)
+            Destroy(gameObject);
+        else
+            instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -74,9 +83,9 @@ public class PlayerController : MonoBehaviour
             xScreenDifference *= slideSpeed;
 
             Vector3 position = transform.position;
-           position.x = clickedPlayerPosition.x + xScreenDifference;
+            position.x = clickedPlayerPosition.x + xScreenDifference;
 
-            position.x = Mathf.Clamp(position.x, -roadWidth / 2 , roadWidth / 2);
+            position.x = Mathf.Clamp(position.x, -roadWidth / 2, roadWidth / 2);
 
 
 
