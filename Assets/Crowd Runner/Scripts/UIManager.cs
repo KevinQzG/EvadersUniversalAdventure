@@ -10,12 +10,16 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject gamePanel;
     [SerializeField] private Slider progressBar;
 
+    [SerializeField] private Text levelText;
+
     // Start is called before the first frame update
     void Start()
     {
         progressBar.value = 0;
 
         gamePanel.SetActive(false);
+
+        levelText.text = "Level " + ( ChunkManager.instance.GetLevel() + 1);
     }
 
     // Update is called once per frame
