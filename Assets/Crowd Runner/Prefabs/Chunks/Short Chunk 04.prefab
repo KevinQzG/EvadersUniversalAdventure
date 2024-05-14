@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1606081712276160569}
   - component: {fileID: 3074972893600891591}
   m_Layer: 0
-  m_Name: Short Chunk 00
+  m_Name: Short Chunk 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,19 +206,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6396355475372283858, guid: 3eaccbc6272be4f1a8969b5a400de362, type: 3}
       propertyPath: leftDoorBonusType
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6396355475372283858, guid: 3eaccbc6272be4f1a8969b5a400de362, type: 3}
       propertyPath: rightDoorBonusType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6396355475372283858, guid: 3eaccbc6272be4f1a8969b5a400de362, type: 3}
       propertyPath: leftDoorBonusAmount
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6396355475372283858, guid: 3eaccbc6272be4f1a8969b5a400de362, type: 3}
       propertyPath: rightDoorBonusAmount
-      value: 20
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

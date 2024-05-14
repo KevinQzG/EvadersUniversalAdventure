@@ -14,7 +14,7 @@ public class Doors : MonoBehaviour
     [SerializeField] private SpriteRenderer leftDoorRenderer;
     [SerializeField] private TextMeshPro rightDoorText;
     [SerializeField] private TextMeshPro leftDoorText;
-    [SerializeField] private Collider collider;
+    [SerializeField] private new Collider collider;
 
 
     [Header(" Settings ")]

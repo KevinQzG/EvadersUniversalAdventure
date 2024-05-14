@@ -441,8 +441,8 @@ MonoBehaviour:
   rightDoorBonusAmount: 3
   leftDoorBonusType: 0
   leftDoorBonusAmount: 8
-  bonusColor: {r: 0.1179742, g: 0.6792453, b: 0, a: 1}
-  penaltyColor: {r: 0.6415094, g: 0, b: 0, a: 1}
+  bonusColor: {r: 0.48544413, g: 0.3285422, b: 0.6509434, a: 1}
+  penaltyColor: {r: 0.48627454, g: 0.32941177, b: 0.6509804, a: 1}
 --- !u!65 &1168411223892915740
 BoxCollider:
   m_ObjectHideFlags: 0

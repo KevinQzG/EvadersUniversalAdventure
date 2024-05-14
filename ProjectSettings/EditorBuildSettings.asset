@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Crowd Runner/Scenes/FirstLevel.unity
+    path: Assets/Crowd Runner/Scenes/World_1 - Snow_Village.unity
     guid: 6d2cc78975a38474abb29c3ecc342ff6
   m_configObjects: {}

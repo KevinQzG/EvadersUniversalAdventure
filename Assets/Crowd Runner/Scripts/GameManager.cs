@@ -20,10 +20,10 @@ public class GameManager : MonoBehaviour
             instance = this;
     }
 
-    // Start is called before the first frame update
+    //Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Game State changed to : " + gameState);
     }
-        public bool IsGameState() {
-            return gameState == GameState.Game;
-        }
+    public bool IsGameState() {
+        return gameState == GameState.Game;
+    }
 }
