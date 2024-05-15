@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Crowd Runner/Scenes/World_1 - Snow_Village.unity
     guid: 6d2cc78975a38474abb29c3ecc342ff6
+  - enabled: 1
+    path: Assets/Crowd Runner/Scenes/World_4 - Desert_Sunset.unity
+    guid: 292bc4cac2e85914d8f49f3156197dde
+  - enabled: 1
+    path: Assets/Crowd Runner/Scenes/World_3 - Artic.unity
+    guid: 4e7e45b4e8cb2b044a2995d28bf04b63
+  - enabled: 1
+    path: Assets/Crowd Runner/Scenes/World_2 - Cyberspace.unity
+    guid: b833394630bc14f4a91437114accc1bb
   m_configObjects: {}

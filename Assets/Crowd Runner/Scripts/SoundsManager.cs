@@ -17,6 +17,7 @@ public class SoundsManager : MonoBehaviour
 
         GameManager.onGameStateChanged += GameStateChangedCallback;
 
+        Enemy.onRunnerDied += PlayRunnerDieSound;
     }
 
     private void OnDestroy()
@@ -25,6 +26,7 @@ public class SoundsManager : MonoBehaviour
 
         GameManager.onGameStateChanged -= GameStateChangedCallback;
 
+        Enemy.onRunnerDied -= PlayRunnerDieSound;
     }
 
     // Update is called once per frame
