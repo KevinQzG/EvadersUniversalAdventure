@@ -10,7 +10,7 @@ public class ChunkManager : MonoBehaviour
     [SerializeField] private LevelSO[] levels;
 
     //Luego de incluir Levels/ ya no son necesarios
-    // [SerializeField] private Chunk[] chunkPrefabs;
+    //[SerializeField] private Chunk[] chunkPrefabs;
     // [SerializeField] private Chunk[] levelChunk;
     private GameObject finishLine;
 
